@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
 })
 
 export class CreateGardenComponent {
+    newPost = '';
+    enteredValue = '';
+    
     onAddPost() {
-        alert('trigger');
+        this.newPost = this.enteredValue;
     }
 }
